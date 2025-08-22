@@ -1,0 +1,56 @@
+body{
+    background-color: rgba(208, 204, 226, 0.39);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.general
+{
+    height: auto;
+    width: 800px;
+    padding: 1em;
+    background-color: white;
+    display: block;
+    margin: auto;    
+    border-radius: 10px;
+}
+h1{
+    color: rgb(129, 129, 233);
+    text-align: center;
+}
+h2, h3{
+    color: rgb(92, 79, 79);
+    margin-left: 10px;
+}
+
+.parrafo{
+    padding: 2em;
+    margin: 10px 10px;
+    text-align: center;
+}
+.pFrambuesa{
+    margin: 20px 3em;
+    text-align: justify;     
+    margin-bottom: 30px;
+}
+.fFoto{
+    height: auto;
+    width: 150px;
+    display: inline-block;
+    margin: 10px;
+}
+.fFotos{    
+    text-align: center;
+}
+.fFotos#tfoto{
+    width: 180px;    
+    margin: auto;
+    background-color: antiquewhite;
+}
+.tParrafo{
+    
+
+}
+.tParrafo li{
+text-align: justify;
+margin: auto 30px;
+margin-bottom: 10px;
+}
