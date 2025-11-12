@@ -1,4 +1,5 @@
-``` sequenceDiagram
+```mermaid
+sequenceDiagram
   actor Alice as browser
   actor Bob as server
 
