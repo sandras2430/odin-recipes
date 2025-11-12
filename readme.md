@@ -2,14 +2,25 @@
   actor Alice as browser
   actor Bob as server
 
+  
   Alice ->> Bob: post https://studies.cs.helsinki.fi/exampleapp/new_note
-  Bob ->> Alice: response 302 redirection /notes
+  activate server
+  Bob -->> Alice: response 302 redirection /notes
+  deactivate server
   Alice ->> Bob: GET https://studies.cs.helsinki.fi/exampleapp/notes
-  Bob ->> Alice: HTML document
+  activate server
+  Bob -->> Alice: HTML document
+  deactivate server
   Alice ->> Bob: GET https://studies.cs.helsinki.fi/exampleapp/main.css
-  Bob ->> Alice: css file
-  Alice ->> Bob: GET https://studies.cs.helsinki.fi/exampleapp/main.js
-  Bob ->> Alice: js file
+  activate server
+  Bob -->> Alice: css file
+  deactivate server
+  Alice->> Bob: GET https://studies.cs.helsinki.fi/exampleapp/main.js
+  activate server
+  Bob -->> Alice: js file
+  deactivate server
   Alice ->> Bob: GET https://studies.cs.helsinki.fi/exampleapp/data.json
-  Bob ->> Alice: [{"nombre":"Alice",...}...]
+  activate server
+  Bob -->> Alice: [{"nombre":"Alice",...}...]
+  deactivate server
 ```
